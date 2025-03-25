@@ -106,4 +106,3 @@
 2025-03-25T18:07:36.235+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.controller.UserController        : All users fetched successfully. Total users: 14
 2025-03-25T18:07:36.236+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.interceptor.LogInterceptor       : OUT: Request: /user/all-users
 2025-03-25T18:07:36.236+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /user/all-users
-2025-03-25T18:09:06.452+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.interceptor.LogInterceptor       : IN: Request: /product/all-products
