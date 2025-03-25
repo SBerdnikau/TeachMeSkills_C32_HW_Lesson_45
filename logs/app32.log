@@ -75,3 +75,39 @@
 2025-03-25T17:34:00.682+03:00  INFO 6484 --- [http-nio-8080-exec-7] com.tms.interceptor.LogInterceptor       : IN: Request: /error
 2025-03-25T17:34:00.686+03:00  INFO 6484 --- [http-nio-8080-exec-7] com.tms.interceptor.LogInterceptor       : OUT: Request: /error
 2025-03-25T17:34:00.686+03:00  INFO 6484 --- [http-nio-8080-exec-7] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /error
+2025-03-25T18:01:40.945+03:00  INFO 6484 --- [http-nio-8080-exec-8] com.tms.interceptor.LogInterceptor       : IN: Request: /swagger-ui/swagger-initializer.js
+2025-03-25T18:01:40.950+03:00  INFO 6484 --- [http-nio-8080-exec-8] com.tms.interceptor.LogInterceptor       : OUT: Request: /swagger-ui/swagger-initializer.js
+2025-03-25T18:01:40.950+03:00  INFO 6484 --- [http-nio-8080-exec-8] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /swagger-ui/swagger-initializer.js
+2025-03-25T18:01:41.077+03:00  INFO 6484 --- [http-nio-8080-exec-3] com.tms.interceptor.LogInterceptor       : IN: Request: /docs
+2025-03-25T18:01:41.080+03:00  INFO 6484 --- [http-nio-8080-exec-3] com.tms.interceptor.LogInterceptor       : OUT: Request: /docs
+2025-03-25T18:01:41.080+03:00  INFO 6484 --- [http-nio-8080-exec-3] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /docs
+2025-03-25T18:03:14.832+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.interceptor.LogInterceptor       : IN: Request: /user/2
+2025-03-25T18:03:14.833+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.controller.UserController        : Received request to fetch user by ID: 2
+2025-03-25T18:03:14.962+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.controller.UserController        : User with ID 2 fetched successfully: {}
+2025-03-25T18:03:14.964+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.interceptor.LogInterceptor       : OUT: Request: /user/2
+2025-03-25T18:03:14.964+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /user/2
+2025-03-25T18:04:32.966+03:00  INFO 6484 --- [http-nio-8080-exec-5] com.tms.interceptor.LogInterceptor       : IN: Request: /user
+2025-03-25T18:04:32.980+03:00  INFO 6484 --- [http-nio-8080-exec-5] com.tms.controller.UserController        : Received request to create user: User(id=null, firstname=TestFN1, secondName=TestSN, age=30, email=test001@mail.ru, sex=m, telephoneNumber=123456789012, created=null, updated=null, isDeleted=null, securityInfo=null)
+2025-03-25T18:04:33.063+03:00  INFO 6484 --- [http-nio-8080-exec-5] com.tms.controller.UserController        : User created successfully: User(id=14, firstname=TestFN1, secondName=TestSN, age=30, email=test001@mail.ru, sex=m, telephoneNumber=123456789012, created=2025-03-25 18:04:33.021197, updated=2025-03-25 18:04:33.02, isDeleted=false, securityInfo=null)
+2025-03-25T18:04:33.063+03:00  INFO 6484 --- [http-nio-8080-exec-5] com.tms.interceptor.LogInterceptor       : OUT: Request: /user
+2025-03-25T18:04:33.063+03:00  INFO 6484 --- [http-nio-8080-exec-5] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /user
+2025-03-25T18:05:05.270+03:00  INFO 6484 --- [http-nio-8080-exec-2] com.tms.interceptor.LogInterceptor       : IN: Request: /user
+2025-03-25T18:05:05.271+03:00  INFO 6484 --- [http-nio-8080-exec-2] com.tms.controller.UserController        : Received request to update user: User(id=14, firstname=TestFNUpdate, secondName=TestSN, age=30, email=test001@mail.ru, sex=m, telephoneNumber=123456789012, created=2025-03-23 19:28:41.245, updated=2025-03-23 19:28:41.243, isDeleted=false, securityInfo=null)
+2025-03-25T18:05:05.452+03:00  INFO 6484 --- [http-nio-8080-exec-2] com.tms.controller.UserController        : User updated successfully: User(id=14, firstname=TestFNUpdate, secondName=TestSN, age=30, email=test001@mail.ru, sex=m, telephoneNumber=123456789012, created=2025-03-25 18:04:33.021197, updated=2025-03-25 18:05:05.410473, isDeleted=false, securityInfo=null)
+2025-03-25T18:05:05.453+03:00  INFO 6484 --- [http-nio-8080-exec-2] com.tms.interceptor.LogInterceptor       : OUT: Request: /user
+2025-03-25T18:05:05.453+03:00  INFO 6484 --- [http-nio-8080-exec-2] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /user
+2025-03-25T18:05:17.112+03:00  INFO 6484 --- [http-nio-8080-exec-8] com.tms.interceptor.LogInterceptor       : IN: Request: /user/14
+2025-03-25T18:05:17.113+03:00  INFO 6484 --- [http-nio-8080-exec-8] com.tms.controller.UserController        : Received request to delete user with ID: 14
+2025-03-25T18:05:17.191+03:00  INFO 6484 --- [http-nio-8080-exec-8] com.tms.controller.UserController        : User with ID 14 deleted successfully
+2025-03-25T18:05:17.192+03:00  INFO 6484 --- [http-nio-8080-exec-8] com.tms.interceptor.LogInterceptor       : OUT: Request: /user/14
+2025-03-25T18:05:17.192+03:00  INFO 6484 --- [http-nio-8080-exec-8] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /user/14
+2025-03-25T18:07:36.192+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.interceptor.LogInterceptor       : IN: Request: /user/all-users
+2025-03-25T18:07:36.192+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.controller.UserController        : Received request to fetch all users
+2025-03-25T18:07:36.235+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.controller.UserController        : All users fetched successfully. Total users: 14
+2025-03-25T18:07:36.236+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.interceptor.LogInterceptor       : OUT: Request: /user/all-users
+2025-03-25T18:07:36.236+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /user/all-users
+2025-03-25T18:09:06.452+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.interceptor.LogInterceptor       : IN: Request: /product/all-products
+2025-03-25T18:09:06.453+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.controller.ProductController     : Received request to fetch all products
+2025-03-25T18:09:06.496+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.controller.ProductController     : All products fetched successfully. Total products: 5
+2025-03-25T18:09:06.498+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.interceptor.LogInterceptor       : OUT: Request: /product/all-products
+2025-03-25T18:09:06.498+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /product/all-products

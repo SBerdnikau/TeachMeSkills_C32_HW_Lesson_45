@@ -7,6 +7,10 @@
 	},
 	"item": [
 		{
+			"name": "New Folder",
+			"item": []
+		},
+		{
 			"name": "Get user",
 			"request": {
 				"method": "GET",
@@ -93,6 +97,25 @@
 					"path": [
 						"user",
 						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/all-users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"all-users"
 					]
 				}
 			},
@@ -186,6 +209,25 @@
 					"path": [
 						"product",
 						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/all-products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"all-products"
 					]
 				}
 			},
