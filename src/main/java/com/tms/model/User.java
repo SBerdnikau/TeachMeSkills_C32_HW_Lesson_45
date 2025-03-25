@@ -11,6 +11,7 @@ import java.sql.Timestamp;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Scope("prototype")
 @Component
 public class User {
     private Long id;
