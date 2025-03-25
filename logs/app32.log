@@ -24,3 +24,54 @@
 2025-03-25T17:23:08.188+03:00  INFO 6788 --- [RMI TCP Connection(4)-192.168.100.3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2025-03-25T17:23:08.189+03:00  INFO 6788 --- [RMI TCP Connection(4)-192.168.100.3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2025-03-25T17:23:08.193+03:00  INFO 6788 --- [RMI TCP Connection(4)-192.168.100.3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-03-25T17:31:54.948+03:00  INFO 6484 --- [main] com.tms.Application                      : Starting Application using Java 21.0.5 with PID 6484 (D:\TeachMeSkills_C32_HW\TeachMeSkills_C32_HW_Lesson_45\target\classes started by serge in D:\TeachMeSkills_C32_HW\TeachMeSkills_C32_HW_Lesson_45)
+2025-03-25T17:31:54.949+03:00  INFO 6484 --- [main] com.tms.Application                      : No active profile set, falling back to 1 default profile: "default"
+2025-03-25T17:31:56.404+03:00  INFO 6484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2025-03-25T17:31:56.409+03:00  INFO 6484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-25T17:31:56.409+03:00  INFO 6484 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2025-03-25T17:31:56.458+03:00  INFO 6484 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-25T17:31:56.458+03:00  INFO 6484 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1467 ms
+2025-03-25T17:32:01.086+03:00  INFO 6484 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 6 endpoint(s) beneath base path '/actuator'
+2025-03-25T17:32:01.136+03:00  INFO 6484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2025-03-25T17:32:01.143+03:00  INFO 6484 --- [main] com.tms.Application                      : Started Application in 6.455 seconds (process running for 7.024)
+2025-03-25T17:32:01.427+03:00  INFO 6484 --- [RMI TCP Connection(2)-192.168.100.3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-25T17:32:01.427+03:00  INFO 6484 --- [RMI TCP Connection(2)-192.168.100.3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-25T17:32:01.429+03:00  INFO 6484 --- [RMI TCP Connection(2)-192.168.100.3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-25T17:33:12.713+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.interceptor.LogInterceptor       : IN: Request: /custom-ui-path.html
+2025-03-25T17:33:12.735+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.interceptor.LogInterceptor       : OUT: Request: /custom-ui-path.html
+2025-03-25T17:33:12.735+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /custom-ui-path.html
+2025-03-25T17:33:12.747+03:00  INFO 6484 --- [http-nio-8080-exec-7] com.tms.interceptor.LogInterceptor       : IN: Request: /swagger-ui/index.html
+2025-03-25T17:33:12.751+03:00  INFO 6484 --- [http-nio-8080-exec-7] com.tms.interceptor.LogInterceptor       : OUT: Request: /swagger-ui/index.html
+2025-03-25T17:33:12.751+03:00  INFO 6484 --- [http-nio-8080-exec-7] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /swagger-ui/index.html
+2025-03-25T17:33:12.783+03:00  INFO 6484 --- [http-nio-8080-exec-9] com.tms.interceptor.LogInterceptor       : IN: Request: /swagger-ui/swagger-ui.css
+2025-03-25T17:33:12.787+03:00  INFO 6484 --- [http-nio-8080-exec-9] com.tms.interceptor.LogInterceptor       : OUT: Request: /swagger-ui/swagger-ui.css
+2025-03-25T17:33:12.787+03:00  INFO 6484 --- [http-nio-8080-exec-9] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /swagger-ui/swagger-ui.css
+2025-03-25T17:33:12.792+03:00  INFO 6484 --- [http-nio-8080-exec-2] com.tms.interceptor.LogInterceptor       : IN: Request: /swagger-ui/swagger-initializer.js
+2025-03-25T17:33:12.792+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.interceptor.LogInterceptor       : IN: Request: /swagger-ui/index.css
+2025-03-25T17:33:12.792+03:00  INFO 6484 --- [http-nio-8080-exec-5] com.tms.interceptor.LogInterceptor       : IN: Request: /swagger-ui/swagger-ui-bundle.js
+2025-03-25T17:33:12.792+03:00  INFO 6484 --- [http-nio-8080-exec-6] com.tms.interceptor.LogInterceptor       : IN: Request: /swagger-ui/swagger-ui-standalone-preset.js
+2025-03-25T17:33:12.795+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.interceptor.LogInterceptor       : OUT: Request: /swagger-ui/index.css
+2025-03-25T17:33:12.795+03:00  INFO 6484 --- [http-nio-8080-exec-4] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /swagger-ui/index.css
+2025-03-25T17:33:12.797+03:00  INFO 6484 --- [http-nio-8080-exec-6] com.tms.interceptor.LogInterceptor       : OUT: Request: /swagger-ui/swagger-ui-standalone-preset.js
+2025-03-25T17:33:12.798+03:00  INFO 6484 --- [http-nio-8080-exec-6] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /swagger-ui/swagger-ui-standalone-preset.js
+2025-03-25T17:33:12.806+03:00  INFO 6484 --- [http-nio-8080-exec-5] com.tms.interceptor.LogInterceptor       : OUT: Request: /swagger-ui/swagger-ui-bundle.js
+2025-03-25T17:33:12.807+03:00  INFO 6484 --- [http-nio-8080-exec-5] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /swagger-ui/swagger-ui-bundle.js
+2025-03-25T17:33:12.813+03:00  INFO 6484 --- [http-nio-8080-exec-2] com.tms.interceptor.LogInterceptor       : OUT: Request: /swagger-ui/swagger-initializer.js
+2025-03-25T17:33:12.813+03:00  INFO 6484 --- [http-nio-8080-exec-2] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /swagger-ui/swagger-initializer.js
+2025-03-25T17:33:12.975+03:00  INFO 6484 --- [http-nio-8080-exec-8] com.tms.interceptor.LogInterceptor       : IN: Request: /docs/swagger-config
+2025-03-25T17:33:12.985+03:00  INFO 6484 --- [http-nio-8080-exec-8] com.tms.interceptor.LogInterceptor       : OUT: Request: /docs/swagger-config
+2025-03-25T17:33:12.985+03:00  INFO 6484 --- [http-nio-8080-exec-3] com.tms.interceptor.LogInterceptor       : IN: Request: /swagger-ui/favicon-32x32.png
+2025-03-25T17:33:12.985+03:00  INFO 6484 --- [http-nio-8080-exec-8] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /docs/swagger-config
+2025-03-25T17:33:12.989+03:00  INFO 6484 --- [http-nio-8080-exec-3] com.tms.interceptor.LogInterceptor       : OUT: Request: /swagger-ui/favicon-32x32.png
+2025-03-25T17:33:12.990+03:00  INFO 6484 --- [http-nio-8080-exec-3] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /swagger-ui/favicon-32x32.png
+2025-03-25T17:33:12.998+03:00  INFO 6484 --- [http-nio-8080-exec-10] com.tms.interceptor.LogInterceptor       : IN: Request: /docs
+2025-03-25T17:33:13.255+03:00  INFO 6484 --- [http-nio-8080-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 252 ms
+2025-03-25T17:33:13.268+03:00  INFO 6484 --- [http-nio-8080-exec-10] com.tms.interceptor.LogInterceptor       : OUT: Request: /docs
+2025-03-25T17:33:13.268+03:00  INFO 6484 --- [http-nio-8080-exec-10] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /docs
+2025-03-25T17:34:00.562+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.interceptor.LogInterceptor       : IN: Request: /docs
+2025-03-25T17:34:00.566+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.interceptor.LogInterceptor       : OUT: Request: /docs
+2025-03-25T17:34:00.566+03:00  INFO 6484 --- [http-nio-8080-exec-1] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /docs
+2025-03-25T17:34:00.679+03:00  WARN 6484 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-03-25T17:34:00.682+03:00  INFO 6484 --- [http-nio-8080-exec-7] com.tms.interceptor.LogInterceptor       : IN: Request: /error
+2025-03-25T17:34:00.686+03:00  INFO 6484 --- [http-nio-8080-exec-7] com.tms.interceptor.LogInterceptor       : OUT: Request: /error
+2025-03-25T17:34:00.686+03:00  INFO 6484 --- [http-nio-8080-exec-7] com.tms.interceptor.LogInterceptor       : COMPLETED: Request: /error
