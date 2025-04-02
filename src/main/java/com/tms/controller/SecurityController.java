@@ -3,6 +3,8 @@ package com.tms.controller;
 import com.tms.model.dto.RegistrationRequestDto;
 import com.tms.service.SecurityService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
@@ -30,6 +32,11 @@ public class SecurityController {
         this.securityService = securityService;
     }
 
+    @ApiResponses(value = {
+            @ApiResponse(description = "User registered successfully", responseCode = "201"),
+            @ApiResponse(description = "Conflict during user registration", responseCode = "409"),
+            @ApiResponse(description = "Validation errors occurred for user", responseCode = "500")
+    })
     @Operation(summary = "User registration", description = "Endpoint allows to register a new user. Checks validation. In the database creates 2 new models related to each other (User, Security)")
     @PostMapping("/registration")
     public ResponseEntity<HttpStatus> registration(@RequestBody @Valid RegistrationRequestDto requestDto,

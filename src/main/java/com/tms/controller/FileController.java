@@ -1,6 +1,8 @@
 package com.tms.controller;
 
 import com.tms.service.FileService;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
@@ -31,6 +33,10 @@ public class FileController {
         this.fileService = fileService;
     }
 
+    @ApiResponses(value = {
+            @ApiResponse(description = "File created successfully.", responseCode = "201"),
+            @ApiResponse(description = "Conflict during file create", responseCode = "409")
+    })
     //Upload file
     @PostMapping
     public ResponseEntity<HttpStatus> uploadFile(@RequestParam("file") MultipartFile file) {
@@ -38,6 +44,10 @@ public class FileController {
         return new ResponseEntity<>(result ? HttpStatus.CREATED : HttpStatus.CONFLICT);
     }
 
+    @ApiResponses(value = {
+            @ApiResponse(description = "File is downloaded File is downloaded successfully.", responseCode = "200"),
+            @ApiResponse(description = "File not found.", responseCode = "404")
+    })
     //Download file
     @GetMapping("/{filename}")
     public ResponseEntity<Resource> getFile(@PathVariable String filename) {
@@ -50,6 +60,10 @@ public class FileController {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
+    @ApiResponses(value = {
+            @ApiResponse(description = "The list with the file is loaded File is downloaded successfully.", responseCode = "200"),
+            @ApiResponse(description = "The list with file not found.", responseCode = "404")
+    })
     //Download list files
     @GetMapping
     public ResponseEntity<ArrayList<String>> getListOfFiles() {
@@ -68,6 +82,10 @@ public class FileController {
         return new ResponseEntity<>(files, HttpStatus.OK);
     }
 
+    @ApiResponses(value = {
+            @ApiResponse(description = "File is deleted successfully .", responseCode = "200"),
+            @ApiResponse(description = "Conflict during file delete.", responseCode = "409")
+    })
     //Delete file
     @DeleteMapping("/{filename}")
     public ResponseEntity<HttpStatus> deleteFile(@PathVariable("filename") String filename) {

@@ -4,10 +4,18 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TeachMeSkillsC32HwLesson45ApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
+	}
+
+	@Test
+	public void testGetUserGyId_Success(){
+		//1.Настройка перед запуском
+
+
+
 	}
 
 }

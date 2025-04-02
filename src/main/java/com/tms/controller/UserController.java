@@ -89,6 +89,10 @@ public class UserController {
         return new ResponseEntity<>(userUpdated.get(), HttpStatus.OK);
     }
 
+    @ApiResponses(value = {
+            @ApiResponse(description = "User deleted successfully", responseCode = "204"),
+            @ApiResponse(description = "Conflict during user delete", responseCode = "409")
+    })
     @DeleteMapping("/{id}")
     public ResponseEntity<HttpStatus> deleteUser(@PathVariable("id") @Parameter(name = "User id") Long userId) {
         logger.info("Received request to delete user with ID: {}", userId);
@@ -104,7 +108,8 @@ public class UserController {
     }
 
     @ApiResponses(value = {
-            @ApiResponse(description = "All users fetched successfully", responseCode = "200")
+            @ApiResponse(description = "All users fetched successfully", responseCode = "200"),
+            @ApiResponse(description = "User is not found in list", responseCode = "404")
     })
     @GetMapping("/all-users")
     public ResponseEntity<List<User>> getUserListPage() {

@@ -86,6 +86,10 @@ public class ProductController {
         return new ResponseEntity<>(updatedProduct.get(), HttpStatus.OK);
     }
 
+    @ApiResponses(value = {
+            @ApiResponse(description = "Product deleted successfully", responseCode = "204"),
+            @ApiResponse(description = "Conflict during product delete", responseCode = "409")
+    })
     @DeleteMapping("/{id}")
     public ResponseEntity<HttpStatus> deleteProduct(@PathVariable("id") @Parameter(description = "Product ID") Long productId)  {
         logger.info("Received request to delete product with ID: {}", productId);
@@ -99,7 +103,8 @@ public class ProductController {
     }
 
     @ApiResponses(value = {
-            @ApiResponse(description = "All products fetched successfully", responseCode = "200")
+            @ApiResponse(description = "All products fetched successfully", responseCode = "200"),
+            @ApiResponse(description = "Product is not found in list", responseCode = "404")
     })
     @GetMapping("/all-products")
     public ResponseEntity<List<Product>> getUserListPage(HttpServletResponse response){
